@@ -1,0 +1,66 @@
+/* .listdiv {
+  width: 100%;
+  border: 1px solid var(--border-light-grey);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+} */
+
+.emptyDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: capitalize;
+}
+
+.emptyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-light-grey);
+  background-color: var(--background-grey);
+}
+
+.emptyContent .p1 {
+  font-size: 1.8rem;
+}
+
+.emptyContent .p2 {
+  font-size: 1.2rem;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  /* font-weight: 400; */
+}
+.emptyContent button {
+  width: 80px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.loadingDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progressIcon {
+  width: 50px;
+  animation: progressSpin 1s linear infinite;
+}
+
+@keyframes progressSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

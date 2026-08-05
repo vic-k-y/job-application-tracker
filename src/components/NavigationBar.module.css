@@ -1,0 +1,61 @@
+.div {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  align-items: center;
+
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  /* border-bottom: 1px solid var(--border-light-grey); */
+  background-color: var(--background-grey);
+}
+
+.div p {
+  text-transform: capitalize;
+  letter-spacing: 2%;
+}
+
+.div a {
+  display: flex;
+  align-items: center;
+  /* justify-content: ce; */
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-light-grey);
+
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.div a img {
+  height: 18px;
+}
+
+.btnLogout {
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-light-grey);
+  background-color: transparent;
+  cursor: pointer;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btnLogout:hover,
+.div a:hover {
+  background-color: var(--border-light-grey);
+}
+.btnLogout:active,
+.div a:active {
+  background-color: transparent;
+}

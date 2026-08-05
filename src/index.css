@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* color: #ebedec; */
+  /* color: white; */
+  scroll-behavior: smooth;
+  /* background-color: var(--nav-background); */
+}
+
+body {
+  /* height: 100%; */
+  /* font-size: 62.5%; */
+  font-size: 1.6rem;
+  /* color: #ebebeb; */
+  background-color: #000;
+  color: #e6e6e6;
+}
+a {
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+:root {
+  --main-background: #000014;
+  --border-light-grey: #767676;
+  --background-grey: #181818;
+  --input-backround-color: #2f2f2f;
+  --light-white: #999999;
+  --full-white: #ebebeb;
+}
+
+.labelClass {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.inputDiv label span {
+  font-size: 1rem;
+  color: #8d8d8d;
+}
+.inputClass {
+  width: 100%;
+  font-size: 1.6rem;
+  color: #fff;
+  border-radius: 5px;
+  background-color: var(--input-backround-color);
+  padding: 0.3rem 0.5rem;
+  box-shadow: none;
+  border: 1px solid var(--border-light-grey);
+}
+/* .inputDiv input::placeholder {
+  opacity: 50%;
+} */
+.inputClass:focus {
+  /* border: 1px solid #07c586; */
+  border-color: #07c586;
+  outline: none;
+}
+
+/* .btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-light-grey);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn {
+  background-color: #fff;
+}
+.btn:disabled {
+  background-color: #767676;
+}
+.btn:not(:disabled):hover {
+  background-color: #767676;
+}
+.btn:not(:disabled):active {
+  background-color: #fff;
+} */
+
+.btnLink:hover {
+  background-color: #767676;
+}
+
+.progressIcon {
+  height: 15px;
+  animation: progress_spin 1s linear infinite;
+}
+@keyframes progress_spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

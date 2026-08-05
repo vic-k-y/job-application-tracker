@@ -1,0 +1,134 @@
+.top {
+  color: #fff;
+  background-color: #000;
+  /* background-color: var(--main-background); */
+  height: 100dvh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.topToast {
+  position: absolute;
+  top: 2%;
+}
+
+.form {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-light-grey);
+
+  background-color: var(--background-grey);
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5%;
+}
+
+.goto {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+.goto a {
+  text-decoration: underline;
+}
+
+.loginform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputDiv {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.inputDiv label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.inputDiv label span {
+  font-size: 1rem;
+  color: #8d8d8d;
+}
+.inputDiv input {
+  width: 100%;
+  font-size: 1.6rem;
+  color: #fff;
+  border-radius: 5px;
+  background-color: var(--input-backround-color);
+  padding: 0.3rem 0.5rem;
+  box-shadow: none;
+  border: 1px solid var(--border-light-grey);
+}
+/* .inputDiv input::placeholder {
+  opacity: 50%;
+} */
+.inputDiv input:focus {
+  /* border: 1px solid #07c586; */
+  border-color: #07c586;
+  outline: none;
+}
+/* .inputDiv input:not(:placeholder-shown):invalid {
+  border-color: red;
+} */
+/* .inputDiv input:invalid {
+  border-color: red;
+} */
+
+.btnDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  text-transform: capitalize;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-light-grey);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btnSubmit {
+  background-color: #fff;
+  width: 100px;
+}
+.btnSubmit:disabled {
+  background-color: #767676;
+}
+.btnSubmit:not(:disabled):hover {
+  background-color: #767676;
+}
+.btnSubmit:not(:disabled):active {
+  background-color: #fff;
+}
+
+.btnLink:hover {
+  background-color: #767676;
+}
